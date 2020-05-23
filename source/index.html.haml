@@ -1,0 +1,186 @@
+;;;
+
+"title": "Home"
+
+;;;
+
+%img.hidden{:src=>"/images/featured.png", :style=>"display:none;"}
+
+%section#main-hero
+	.double-padding-bottom
+		.container
+			.row.justify-content-center
+				.col-lg-8
+					.double-margin-top
+						%h1.market.bold-font.double-margin-bottom.text-center
+							A visual feedback tool for teams making websites
+						.note-placement-wrapper
+							%h1.double-margin-bottom.comment-text.text-center
+								Fast, easy feedback for your website.
+							.note-detail-wrapper.market-note.note-1
+								.note-detail-body
+									.comment-number
+										1
+									.comment-form.animated
+										.comment-form-header
+											.row
+												.col
+													%h4.no-margin-bottom
+														Add a note
+												.col
+													%button.close{:type=>"button"}
+														%i.material-icons
+															close
+										.comment-form-body
+											.text-wrapper.typer
+												%p
+													This text is misaligned. 
+										.comment-form-footer
+											.text-right
+												%a.btn.btn-link{:href=>"#"}
+													%i.material-icons
+														attachment
+												%a.btn.btn-primary{:href=>"#"}
+													Add note
+					.video-button-wrapper.text-center
+						%button.btn.btn-primary.video-btn{"data-src" => "https://www.youtube.com/embed/33AciLvQ9mo", "data-target" => "#myModal", "data-toggle" => "modal", :type => "button"}
+							%i.material-icons
+								play_circle_outline
+							See in in action
+
+
+#how-it-works.spacer
+%section.no-padding-bottom
+	.container
+		.row.align-items-center.justify-content-around
+			.col-lg-12.text-center
+				%h2.market.bold-font.margin-bottom
+					Here's how it works
+				%img{:src=>"/images/marketing/smile.svg"}
+
+
+%section
+	.container
+		.row.align-items-center.justify-content-around
+			.col-lg-6
+				.browser-wrapper
+					.browser-header
+					%img.full-width.double-margin-bottom{:src=>"/images/marketing/share.gif"}
+			.col-lg-4
+				%h3.bold-font.market
+					Create a project and invite your team
+				%p.market
+					Works for any website, give your project a name and invite your team. 
+
+
+
+%section
+	.container
+		.row.align-items-center.justify-content-around
+			.col-lg-6.order-lg-2
+				.browser-wrapper
+					.browser-header
+					%img.full-width.double-margin-bottom{:src=>"/images/marketing/note.gif"}
+			.col-lg-4.order-lg-1
+				%h3.bold-font.market
+					Use the Chrome extension to make notes on your website
+				%p.market
+					Quickly add notes over the top of your website.
+
+
+
+
+%section
+	.container
+		.row.align-items-center.justify-content-around
+			.col-lg-6
+				%img.full-width.double-margin-bottom{:src=>"/images/marketing/step-3.png"}
+			.col-lg-4
+				%h3.bold-font.market
+					Collaborate and resolve
+				%p.market
+					Notes are saved to your project with detailed screenshots.
+
+
+
+
+%section
+	.container
+		.row.double-margin-bottom
+			.col-lg-12.text-center
+				%h2.market.bold-font.double-margin-bottom
+					Useful for the whole team
+		.row
+			.col-lg-4.margin-bottom
+				%h3.market.bold-font
+					Volley is perfect for
+				%ul.check-list
+					%li
+						Designers doing a website review
+					%li
+						Developers looking for feedback
+					%li
+						Project managers reviewing features
+					%li
+						QA teams documenting bugs
+			.col-lg-4.margin-bottom
+				%h3.market.bold-font
+					Use cases
+				%ul.check-list
+					%li
+						Design review
+					%li
+						Bug reporting
+					%li
+						Feature documentation and ideas
+					%li
+						Developer questions
+					%li
+						Client feedback
+			.col-lg-4.margin-bottom
+				%h3.market.bold-font
+					Why we’re different
+				%ul.check-list
+					%li
+						Volley uses screenshots for easier review
+					%li
+						Simple, collaborative workspaces
+					%li
+						Upload design attachments with your notes
+					%li
+						Create notes in seconds
+
+
+#pricing.spacer
+%section.no-padding-bottom.off-white-bg
+	.container
+		.row.double-margin-bottom
+			.col-lg-12.text-center
+				%h2.market.bold-font
+					Simple pricing
+				%p.market.text-center
+					Get an ample free plan forever OR upgrade to unlimited everything for one unbelievably low price.
+		.row
+			.col-lg-12
+				=partial('/shared/pricing-table')
+
+
+=partial('/shared/promo')
+
+
+
+
+
+
+
+
+/ Modal
+#myModal.modal.fade.video-modal{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+	.modal-dialog{:role => "document"}
+		.modal-content
+			.modal-body
+				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+					%span{"aria-hidden" => "true"} ×
+				.embed-responsive.embed-responsive-16by9
+					%iframe#video.embed-responsive-item{:allow => "autoplay", :allowscriptaccess => "always", :src => ""}
+

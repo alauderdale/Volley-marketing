@@ -1,0 +1,400 @@
+html.market-html{
+	scroll-behavior: smooth;
+}
+
+//fix smooth fixed scolling
+.spacer{
+	height:96px;
+	margin-bottom:-96px;
+	position:relative;
+	top:-96px;
+}
+
+
+
+//video modal
+
+.video-button-wrapper{
+	position:relative;
+	width:100%;
+}
+
+.video-btn{
+	padding:15px 20px 15px 20px;
+	position:relative;
+	top:250px;
+	margin:0 auto;
+	color:$link-color;
+	background:white!important;
+	&:hover, &:active{
+		color:$link-color;
+	}
+	i{
+		line-height: 13px;
+		position: relative;
+		top: 6px;
+		margin-right: 8px;
+	}
+}
+
+.video-modal{
+	.modal-dialog {
+	max-width: 800px;
+	margin: 30px auto;
+	}
+
+
+
+	.modal-body {
+	position:relative;
+	padding:0px;
+	}
+	.close {
+	position:absolute;
+	right:-30px;
+	top:0;
+	z-index:999;
+	font-size:2rem;
+	font-weight: normal;
+	color:#fff;
+	opacity:1;
+	}
+}
+
+
+//style the browsers
+
+.browser-wrapper{
+	padding-top:30px;
+	.browser-header{
+		border:1px solid $border-color;
+		height:28px;
+		width:100%;
+		border-bottom:none;
+		border-top-right-radius:3px;
+		border-top-left-radius:3px;
+	}
+	img{
+		border:1px solid $border-color;
+	}
+}
+
+
+body.market{
+	padding-top: 87px!important;
+}
+
+.market section{
+	padding:$baseline*4 0;
+	@include breakpoint(sm) {
+		padding:$baseline 0;
+	}
+	&#main-hero{
+		position:relative;
+		padding-bottom:$baseline*18;
+		padding-top:$baseline;
+		@include breakpoint(sm) {
+			padding-top:0;
+		}
+	}
+}
+
+#primary-header{
+	width:100%;
+	padding:20px 0;
+	.btn-link{
+		padding-left:0px;
+		padding-right:15px;
+		@include breakpoint(md) {
+			color:$link-color;
+		}
+	}
+	.btn-secondary{
+		padding-left:12px;
+		padding-right:12px;
+	}
+
+}
+
+#marketing-header{
+	position:fixed;
+	width:100%;
+	background: white!important;
+	padding:20px 0;
+	z-index: 1000;
+	top:0;
+	.nav{
+		.nav-item{
+			font-size: 18px;
+		}
+	}
+
+}
+
+.text-container{
+	position: relative;
+	.accent-text{
+		position:absolute;
+		top:0;
+		left:-30px;
+		font-weight: 900;
+		font-size: 76px;
+		opacity: 0.08;
+		color: #0042FF;
+	}
+}
+
+p{
+	&.market{
+		font-size: 18px;
+		line-height:27px;
+	}
+}
+
+h1{
+	&.market{
+		font-size: 61px;
+		line-height:59px;
+		@include breakpoint(lg) {
+			font-size: 52px;
+			line-height:50px;
+		}
+		@include breakpoint(md) {
+			font-size: 40px;
+			line-height:44px;
+		}
+	}	
+}
+
+h2{
+	&.market{
+		font-size: 41px;
+		line-height:50px;
+		@include breakpoint(sm) {
+			
+		}
+	}
+}
+
+h3{
+	&.market{
+		font-size: 23px;
+		line-height:32px;
+	}
+}
+
+
+ul{
+	&.check-list{
+		list-style: none;
+		padding: 0;
+		li{
+			font-size: 16px;
+			padding-left: 1.3em;
+			margin-bottom:10px;
+			&:before{
+				content: "check"; /* FontAwesome Unicode */
+				font-family: Material Icons;
+				margin-left: -1.3em; /* same as padding-left set on li */
+				width: 1.3em; /* same as padding-left set on li */
+				position:relative;
+				top:4px;
+				font-size:20px;
+				color:font-color;
+			}
+		}
+	}
+}
+
+
+.volley-jumbotron{
+	background: $primary-color;
+	color:white;
+	border-radius: 10px;
+	background:$primary-color url("../images/marketing/pattern-jumbotron.svg") center;
+}
+
+
+.note-placement-wrapper{
+	position:relative;
+}
+
+
+.market-note{
+	position:absolute;
+	z-index: 999;
+	&.note-1{
+		right: 40%;
+		bottom: -260px;
+		@include breakpoint(sm) {
+			right: 20%;
+		}
+	}
+	.note-detail-body{
+	    position: relative;
+	    width: 338px;
+	    height: 210px;
+	    @include breakpoint(sm) {
+	    	width:270px;
+	    }
+	    .comment-form{
+	    	@include breakpoint(sm) {
+				width:270px;
+	    	}
+	    	
+	    	.comment-form-body{
+	    		.text-wrapper{
+	    			padding: 10px;
+	    			border:1px solid $primary-color;
+	    			border-radius:2px;
+	    		}
+	    	}
+	    }
+		.comment-number{
+			position: absolute;
+			right: 25px;
+			top: -65px;
+			animation: scale-in-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+
+		}
+		.comment-form{
+			position:absolute;
+			animation: fade-in 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+		}
+	}
+}
+
+
+.comment-text{
+	position:relative;
+	right:100px;
+	@include breakpoint(sm) {
+		right:15px;
+	}
+}
+
+
+.typer p {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid $gray-color; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  width: 153px;
+
+  animation: 
+    typing 3s steps(25, end),
+    blink-caret 1s step-end infinite;
+}
+
+
+//mailchimp
+
+#mc_embed_signup{
+	.button{
+		background:white!important;
+		color: $primary-color!important;
+		font-weight: 700;
+		font-size: 18px!important;
+		height: 46px!important;
+		letter-spacing: 0!important;
+	}
+	input.email{
+		font-size: 18px!important;
+		height: 46px!important;
+		padding-left:16px!important;
+		border:1px solid white!important;
+		margin-right:10px!important;
+		background: rgba(255,255,255,.9)!important;
+	}
+}
+
+
+/* The typing effect */
+@keyframes typing {
+  0% { 
+  		width: 0; 
+  		opacity: 0;
+  	}
+  46% { opacity: 0; 
+  		width: 0; 
+  }
+  47% { opacity: 1; 
+  }
+  100% { 
+  		width: 153px; 
+  		opacity: 1;
+  		}
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: $gray-color; }
+}
+
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-7-11 0:8:32
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-in-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-7-11 0:11:54
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+

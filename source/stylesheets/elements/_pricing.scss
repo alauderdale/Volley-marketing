@@ -1,0 +1,47 @@
+.strikethrough{
+	display: inline;
+	&:before{
+		position: absolute;
+		content: "";
+		left: 13px;
+		top: 34px;
+		right: -17px;
+		border-top: 4px solid;
+		border-color: shade($link-color,30%);
+		z-index: 99;
+	}
+}
+
+.card{
+	&.price-card{
+		min-height: 500px;
+		@include breakpoint(sm) {
+			min-height: auto;
+		}
+		.card-header{
+			position:relative;
+			min-height: 170px;
+			.card-promo{
+				color: shade($link-color,30%);
+			}
+		}
+		h1{
+			position:relative;
+			.price{
+				font-size: 20px;
+				position: absolute;
+				top:15px;
+			}
+			.dollar-ammount{
+				position:relative;
+				left:15px;
+			}
+			.month{
+				font-size: 18px;
+				position:relative;
+				left:8px;
+				font-weight: 500;
+			}
+		}
+	}
+}
