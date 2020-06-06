@@ -27,19 +27,84 @@
 						All communications are encrypted over SSL/TLS 1.2, which cannot be viewed by a third party and is the same level of encryption used by banks and financial institutions.
 				.margin-bottom
 					%h3.market.bold-font
-						Account security
+						Physical security
+
 					%p
-						All communications are encrypted over SSL/TLS 1.2, which cannot be viewed by a third party and is the same level of encryption used by banks and financial institutions.
+						Our infrastructure runs inside data centers designed and operated by Google 
+						%a{:href=>"https://cloud.google.com/"}
+							Cloud Platform (GCP). 
+						Our servers are based in the US central region. GCP data centers feature state of the art environmental security controls to safeguard against fires, power loss, and adverse weather conditions. Physical access to these facilities is highly restricted and they are monitored by professional security personnel.
 				.margin-bottom
 					%h3.market.bold-font
-						Account security
+						Software security
+
 					%p
-						All communications are encrypted over SSL/TLS 1.2, which cannot be viewed by a third party and is the same level of encryption used by banks and financial institutions.
+						Our systems are containerized and run the latest stable versions of Debian and Python. Each container image is scanned for security vulnerabilities before it can be deployed.
+
+
 				.margin-bottom
 					%h3.market.bold-font
-						Account security
+						DDoS mitigation
+
 					%p
-						All communications are encrypted over SSL/TLS 1.2, which cannot be viewed by a third party and is the same level of encryption used by banks and financial institutions.
+						Our applications can gracefully handle Layer 4 and below attacks, such as SYN floods, IP fragment floods, port exhaustion, and so on. Additionally, we are in the evaluation phase for 
+						%a{:href=>"https://cloud.google.com/armor"}
+							Google Cloud Armor.
+
+				.margin-bottom
+					%h3.market.bold-font
+						Data security
+					%p
+						All customer data is stored securely in an encrypted highly available Google Cloud SQL database and in Google Cloud Storage—both of which offer 99.9% or better uptime SLAs.
+
+
+
+				.margin-bottom
+					%h3.market.bold-font
+						Private screenshots
+
+
+					%p
+						By default, new screenshots are private and you are the only one able to access them. Only when you share them with one of our integration vendors, or explicitly share the screenshot URL, are they accessible outside of Volley. Additionally, all screenshot URLs are signed and given time-limited resource access of 24 hours. At any time, you can decide to delete your screenshots.
+
+
+
+				.margin-bottom
+					%h3.market.bold-font
+						Integration Credentials
+
+
+					%p
+						When you enter your authentication credentials, they are ciphered using Fernet symmetric encryption (128-bit AES in CBC mode, using PKCS7 padding, with HMAC using SHA256 for authentication) and then stored in our encrypted Postgres database.
+
+
+
+				.margin-bottom
+					%h3.market.bold-font
+						Logging
+
+					%p
+						We log activity across our platform, from individual API requests to infrastructure configuration changes. Logs are aggregated for monitoring, analysis, and anomaly detection.
+
+
+
+				.margin-bottom
+					%h3.market.bold-font
+						Payment processing
+
+
+					%p
+						We process payments with 
+						%a{:href=>"https://stripe.com/docs/security"}
+							Stripe
+						, which has been audited by a 
+						%a{:href=>"https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard"}
+							Payment Card Industry Standard-certified 
+						auditor and is certified to PCI Service Provider Level 1. This is the most stringent level of PCI DSS certification available. Payment information is transmitted directly to Stripe via HTTPS for secure storage and is never transmitted to or stored in Volley.
+
+
+
+
 
 
 

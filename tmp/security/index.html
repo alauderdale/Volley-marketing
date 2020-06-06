@@ -13,7 +13,7 @@ Volley | Fast, easy feedback for your website"
 <!-- /google material icons -->
 <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
 <link href="../stylesheets/style.css" rel="stylesheet" />
-<link href='../images/favicon.ico' rel='shortcut icon'>
+<link href='../images/favicon.png' rel='shortcut icon'>
 <script src="../bower_components/bootstrap/site/docs/4.3/assets/js/vendor/jquery-slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script><script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script><script src="../javascripts/scripts.js"></script>
 
 <script async='' src='https://www.googletagmanager.com/gtag/js?id=UA-143756502-1'></script>
@@ -55,10 +55,10 @@ About us
 </div>
 <div class='col-lg-3 col-md-6 col-7'>
 <div class='float-right'>
-<a class='btn btn-secondary quarter-margin-right' href='https://meetvolley.com/welcome/login'>
+<a class='btn btn-secondary quarter-margin-right' href='https://app.meetvolley.com//login'>
 Login
 </a>
-<a class='btn btn-primary' href='https://meetvolley.com/welcome/sign-up'>
+<a class='btn btn-primary' href='https://app.meetvolley.com//sign-up'>
 Sign up free
 </a>
 </div>
@@ -100,26 +100,81 @@ All communications are encrypted over SSL/TLS 1.2, which cannot be viewed by a t
 </div>
 <div class='margin-bottom'>
 <h3 class='market bold-font'>
-Account security
+Physical security
 </h3>
 <p>
-All communications are encrypted over SSL/TLS 1.2, which cannot be viewed by a third party and is the same level of encryption used by banks and financial institutions.
+Our infrastructure runs inside data centers designed and operated by Google
+<a href='https://cloud.google.com/'>
+Cloud Platform (GCP).
+</a>
+Our servers are based in the US central region. GCP data centers feature state of the art environmental security controls to safeguard against fires, power loss, and adverse weather conditions. Physical access to these facilities is highly restricted and they are monitored by professional security personnel.
 </p>
 </div>
 <div class='margin-bottom'>
 <h3 class='market bold-font'>
-Account security
+Software security
 </h3>
 <p>
-All communications are encrypted over SSL/TLS 1.2, which cannot be viewed by a third party and is the same level of encryption used by banks and financial institutions.
+Our systems are containerized and run the latest stable versions of Debian and Python. Each container image is scanned for security vulnerabilities before it can be deployed.
 </p>
 </div>
 <div class='margin-bottom'>
 <h3 class='market bold-font'>
-Account security
+DDoS mitigation
 </h3>
 <p>
-All communications are encrypted over SSL/TLS 1.2, which cannot be viewed by a third party and is the same level of encryption used by banks and financial institutions.
+Our applications can gracefully handle Layer 4 and below attacks, such as SYN floods, IP fragment floods, port exhaustion, and so on. Additionally, we are in the evaluation phase for
+<a href='https://cloud.google.com/armor'>
+Google Cloud Armor.
+</a>
+</p>
+</div>
+<div class='margin-bottom'>
+<h3 class='market bold-font'>
+Data security
+</h3>
+<p>
+All customer data is stored securely in an encrypted highly available Google Cloud SQL database and in Google Cloud Storage—both of which offer 99.9% or better uptime SLAs.
+</p>
+</div>
+<div class='margin-bottom'>
+<h3 class='market bold-font'>
+Private screenshots
+</h3>
+<p>
+By default, new screenshots are private and you are the only one able to access them. Only when you share them with one of our integration vendors, or explicitly share the screenshot URL, are they accessible outside of Volley. Additionally, all screenshot URLs are signed and given time-limited resource access of 24 hours. At any time, you can decide to delete your screenshots.
+</p>
+</div>
+<div class='margin-bottom'>
+<h3 class='market bold-font'>
+Integration Credentials
+</h3>
+<p>
+When you enter your authentication credentials, they are ciphered using Fernet symmetric encryption (128-bit AES in CBC mode, using PKCS7 padding, with HMAC using SHA256 for authentication) and then stored in our encrypted Postgres database.
+</p>
+</div>
+<div class='margin-bottom'>
+<h3 class='market bold-font'>
+Logging
+</h3>
+<p>
+We log activity across our platform, from individual API requests to infrastructure configuration changes. Logs are aggregated for monitoring, analysis, and anomaly detection.
+</p>
+</div>
+<div class='margin-bottom'>
+<h3 class='market bold-font'>
+Payment processing
+</h3>
+<p>
+We process payments with
+<a href='https://stripe.com/docs/security'>
+Stripe
+</a>
+, which has been audited by a
+<a href='https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard'>
+Payment Card Industry Standard-certified
+</a>
+auditor and is certified to PCI Service Provider Level 1. This is the most stringent level of PCI DSS certification available. Payment information is transmitted directly to Stripe via HTTPS for secure storage and is never transmitted to or stored in Volley.
 </p>
 </div>
 </div>
@@ -151,7 +206,7 @@ About
 </a>
 </li>
 <li>
-<a class='text-color' href='#'>
+<a class='text-color' href='/#how-it-works'>
 How it works
 </a>
 </li>
@@ -198,7 +253,7 @@ YouTube
 </a>
 </li>
 <li>
-<a class='text-color' href='https://www.producthunt.com/upcoming/volley-2'>
+<a class='text-color' href='https://www.producthunt.com/posts/volley-c1817f8d-6722-443c-baee-3b328e4507b0'>
 Product Hunt
 </a>
 </li>
@@ -220,6 +275,8 @@ hello@meetvolley.com
 </div>
 </section>
 </footer>
+<script defer='defer' id='io.birdseed.script-tag' src='https://cdn.birdseed.io/widget.js' type='text/javascript'></script>
+<div data-token='729f1d20d591a049f3dc5a30b717b7a4' id='birdseed-widget-container'></div>
 
 </body>
 </head>
