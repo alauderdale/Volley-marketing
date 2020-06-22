@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1271px" height="887px" viewBox="0 0 1271 887" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Oval</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1271" height="887"></rect>
+    </defs>
+    <g id="Marketing-2.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Oval">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+            <ellipse fill="#EDF2FF" mask="url(#mask-2)" cx="635.5" cy="244" rx="776.5" ry="509"></ellipse>
+        </g>
+    </g>
+</svg>
