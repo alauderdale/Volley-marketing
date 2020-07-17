@@ -1,5 +1,11 @@
 a{
 	color:$link-color;
+	&:hover{
+		text-decoration: none;
+	}
+	&.link-underline{
+		border-bottom:1px solid $link-color;
+	}
 }
 
 .btn{

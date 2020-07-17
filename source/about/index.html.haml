@@ -4,18 +4,31 @@
 
 ;;;
 
-%section.no-padding-bottom
+%section.off-white-bg
+	.padded
+	.padded
+%section.no-padding-top.no-padding-bottom{:style=>"margin-top:-192px;"}
 	.container
-		.row.justify-content-center
-			.col.col-md-8.text-center
-				%h1.market.bold-font.double-margin-bottom
-					About Us
-				%h3.market
-					We created Volley as an effective way to provide 
-					lightning-fast, collaborative visual feedback on any website. Volley replaces time-consuming and outdated methods of the past. Add our easy-to-use tool to your web design toolbox and watch your process soar! 
 		.row
 			.col-12.text-center
-				%img.margin-top.max-width{:src=>"../images/marketing/help-illustration.svg", :width=>"900px"}
+				%img.double-margin-top.max-width{:src=>"../images/about-img.svg", :width=>"600px"}
+
+%section.no-padding-bottom.double-padding-top
+	.container.double-padding-top
+		.row.justify-content-center
+			.col.col-md-8
+				%h1.market.bold-font.double-margin-bottom
+					Why we made Volley...
+				%p.market.body-lg
+					%span.bold-font
+						I’m Alex, creator of Volley. 
+					I’ve been 
+					%a{:href=>"https://dribbble.com/Alauderdale10"}
+						working as a UX designer
+					for over 10 years. During my time spent working for numerous startups and agencies, I noticed the same thing everywhere I worked. Our team would create a set of designs, doing everything we could to ensure our developers had what they needed to build our designs. Even so, the resulting builds would never look exactly like my original design. 
+				%p.market.body-lg
+					At first, I thought this must be a result of the team or company, but after seeing this literally everywhere I went, I realized that this is just a natural part of the process. After spending hours compiling screenshots into Google Docs and having them constantly get out of sync or lost in the grind, I paired up with my best friend of 27 years to create a simple tool to make this workflow quick and easy. After seeing how much our developer team loved this elegant back-and-fourth, we decided to share “Volley” with any other designer or developer that might find it useful. Since then, we’ve seen hundreds of web and digital product teams save time by using Volley for their own design QA process. 
+
 
 
 =partial('/shared/promo')

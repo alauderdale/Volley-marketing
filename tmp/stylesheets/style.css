@@ -21,7 +21,7 @@ html {
 body {
   font: 100%;
   font-size: 16px;
-  color: #354052;
+  color: #393C3E;
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
@@ -110,7 +110,7 @@ img {
   color: #7F8FA4 !important; }
 
 .text-color {
-  color: #354052 !important; }
+  color: #393C3E !important; }
 
 .success-text-color {
   color: #26C164 !important; }
@@ -204,9 +204,13 @@ ul.icon-list-better li {
 
 a {
   color: #0042FF; }
+  a:hover {
+    text-decoration: none; }
+  a.link-underline {
+    border-bottom: 1px solid #0042FF; }
 
 .btn {
-  border-radius: 3px;
+  border-radius: 8px;
   font-weight: 600;
   font-size: 16px; }
   .btn.btn-lg {
@@ -224,7 +228,7 @@ a {
   .btn.btn-secondary {
     background: white;
     border-color: #B4BBC6;
-    color: #354052; }
+    color: #393C3E; }
     .btn.btn-secondary:hover {
       border-color: #121314; }
   .btn.btn-terciary {
@@ -258,7 +262,7 @@ a {
   .btn.btn-flat {
     background: transparent;
     border-color: white;
-    color: #354052; }
+    color: #393C3E; }
     .btn.btn-flat:hover {
       background: #f2f2f2;
       border-color: #f2f2f2; }
@@ -477,7 +481,7 @@ section {
   section.inverse-section {
     background-color: #0042FF; }
   section.off-white-bg {
-    background-color: #F5F8FA; }
+    background-color: #F3F8FF; }
 
 .tab-nav {
   text-align: center; }
@@ -495,14 +499,14 @@ section {
       padding-bottom: 5px;
       font-weight: 600; }
       .tab-nav li a.active {
-        color: #354052;
+        color: #393C3E;
         border-bottom: 3px solid #0042FF; }
 
 .navbar a.nav-link {
-  color: #354052 !important;
+  color: #393C3E !important;
   transition-duration: 0.13s; }
   .navbar a.nav-link:hover {
-    color: #050608 !important; }
+    color: #060606 !important; }
 
 .navbar.bg-light {
   background-color: white !important; }
@@ -715,8 +719,8 @@ section {
   border-color: #E6EAEE; }
   .card .card-header {
     background: white;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     border-color: #E6EAEE; }
   .card .card-footer {
     border-top: none;
@@ -741,7 +745,7 @@ section {
   .product-card-wrapper:hover {
     box-shadow: 0 1px 3px 1px rgba(60, 64, 67, 0.15); }
     .product-card-wrapper:hover .card-url {
-      color: #354052 !important; }
+      color: #393C3E !important; }
 
 .card-actions {
   position: absolute;
@@ -773,8 +777,8 @@ section {
       background-size: 100%;
       border: 1px solid #E6EAEE;
       border-bottom: none;
-      border-top-left-radius: 3px;
-      border-top-right-radius: 3px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
       width: 100%;
       height: 100%;
       position: relative; }
@@ -828,7 +832,7 @@ section {
     z-index: 99;
     background-color: white; }
     .product-card .card-body .card-url {
-      color: #354052; }
+      color: #393C3E; }
     .product-card .card-body .card-text {
       color: #B4BBC6; }
   .product-card:hover {
@@ -892,12 +896,12 @@ section {
   border: none;
   border-radius: 2px; }
   .dropdown-menu .dropdown-item {
-    color: #354052; }
+    color: #393C3E; }
     .dropdown-menu .dropdown-item:hover {
       background: #F5F8FA; }
     .dropdown-menu .dropdown-item:active {
       background: #e9ecee;
-      color: #354052; }
+      color: #393C3E; }
     .dropdown-menu .dropdown-item.active {
       background: #F5F8FA;
       box-shadow: inset 3px 0 0 #0042FF;
@@ -943,7 +947,7 @@ section {
       text-align: center; }
     .menu-with-button .dropdown-item .avatar-container.invert-avatar .avatar-default {
       background: white;
-      color: #354052;
+      color: #393C3E;
       border: 1px solid #E6EAEE; }
   .menu-with-button .dropdown-item .text {
     padding: 0 !important; }
@@ -981,6 +985,50 @@ section {
   .badge.badge-danger {
     background-color: #FF4E4A; }
 
+.primary-footer section {
+  background-color: #1d1e1f; }
+  .primary-footer section ul li a {
+    color: white; }
+
+.testimonial-container {
+  background: #FFFFFF;
+  box-shadow: 0 12px 25px 0 #DDE3F6;
+  border-radius: 30px; }
+  .testimonial-container .card-body {
+    padding: 60px; }
+    .testimonial-container .card-body p {
+      font-size: 22px;
+      letter-spacing: 0;
+      line-height: 1.6em; }
+    @media (max-width: 992px) {
+      .testimonial-container .card-body {
+        padding: 30px; }
+        .testimonial-container .card-body p {
+          font-size: 18px;
+          line-height: 1.8em; } }
+
+.check-card {
+  background: white;
+  box-shadow: 0 5px 18px 0 rgba(0, 0, 0, 0.08);
+  border: none;
+  position: relative;
+  min-height: 116px; }
+  @media (max-width: 1200px) {
+    .check-card {
+      min-height: 140px; } }
+  @media (max-width: 992px) {
+    .check-card {
+      min-height: auto; } }
+  .check-card:before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background: url("../images/check-ball.svg") no-repeat; }
+
 html.market-html {
   scroll-behavior: smooth; }
 
@@ -988,26 +1036,29 @@ html.market-html {
   height: 96px;
   margin-bottom: -96px;
   position: relative;
-  top: -96px; }
+  top: -96px;
+  pointer-events: none; }
 
 .video-button-wrapper {
   position: relative;
   width: 100%; }
+  .video-button-wrapper .btn {
+    margin: 10px; }
 
 .video-btn {
-  padding: 15px 20px 15px 20px;
   position: relative;
-  top: 250px;
   margin: 0 auto;
-  color: #0042FF;
-  background: white !important; }
+  color: #393C3E;
+  background: white !important;
+  border-color: #B4BBC6 !important; }
   .video-btn:hover, .video-btn:active {
     color: #0042FF; }
   .video-btn i {
     line-height: 13px;
     position: relative;
     top: 6px;
-    margin-right: 8px; }
+    margin-right: 8px;
+    color: #0042FF; }
 
 .video-modal .modal-dialog {
   max-width: 800px;
@@ -1043,14 +1094,14 @@ body.market {
   padding-top: 87px !important; }
 
 .market section {
-  padding: 64px 0; }
+  padding: 96px 0; }
   @media (max-width: 768px) {
     .market section {
-      padding: 16px 0; } }
+      padding: 64px 0; } }
   .market section#main-hero {
     position: relative;
-    padding-bottom: 288px;
-    padding-top: 16px; }
+    padding-top: 16px;
+    padding-bottom: 16px; }
     @media (max-width: 768px) {
       .market section#main-hero {
         padding-top: 0; } }
@@ -1092,6 +1143,13 @@ body.market {
 p.market {
   font-size: 18px;
   line-height: 27px; }
+  p.market.body-lg {
+    font-size: 24px;
+    line-height: 36px; }
+    @media (max-width: 992px) {
+      p.market.body-lg {
+        font-size: 18px;
+        line-height: 27px; } }
 
 h1.market {
   font-size: 61px;
@@ -1110,8 +1168,8 @@ h2.market {
   line-height: 50px; }
 
 h3.market {
-  font-size: 23px;
-  line-height: 32px; }
+  font-size: 32px;
+  line-height: 38px; }
 
 ul.check-list {
   list-style: none;
@@ -1147,10 +1205,10 @@ ul.check-list {
   z-index: 999; }
   .market-note.note-1 {
     right: 40%;
-    bottom: -260px; }
+    bottom: -100px; }
     @media (max-width: 768px) {
       .market-note.note-1 {
-        right: 20%; } }
+        right: 40%; } }
   .market-note .note-detail-body {
     position: relative;
     width: 338px;
@@ -1206,6 +1264,19 @@ ul.check-list {
   border: 1px solid white !important;
   margin-right: 10px !important;
   background: rgba(255, 255, 255, 0.9) !important; }
+
+.lr-img {
+  width: 120%;
+  position: relative; }
+  @media (max-width: 992px) {
+    .lr-img {
+      width: 100%;
+      margin-bottom: 32px; } }
+  .lr-img.left {
+    right: 100px; }
+    @media (max-width: 992px) {
+      .lr-img.left {
+        right: 0; } }
 
 /* The typing effect */
 @keyframes typing {
@@ -1820,7 +1891,7 @@ ul.check-list {
   margin-top: 10px;
   text-decoration: none !important;
   transition-duration: .2s;
-  border-radius: 3px;
+  border-radius: 8px;
   position: relative; }
   .attachment-thumbnail img {
     width: 30px;
@@ -1829,7 +1900,7 @@ ul.check-list {
     margin-right: 8px; }
   .attachment-thumbnail .attachment-title {
     margin: 0;
-    color: #354052;
+    color: #393C3E;
     line-height: 26px; }
   .attachment-thumbnail .actions {
     position: absolute;
