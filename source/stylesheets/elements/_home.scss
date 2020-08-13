@@ -43,6 +43,10 @@
 		transform: translate(-50%, 0%);
 		background:url("../images/check-ball.svg")no-repeat;
 	}
+	&.check-card-flat{
+		box-shadow:none;
+		background:tint($primary-color,96%);
+	}
 }
 
 
@@ -68,6 +72,9 @@ html.market-html{
 	width:100%;
 	.btn{
 		margin:10px;
+		@include breakpoint(sm) {
+			margin:10px 0;
+		}
 	}
 }
 

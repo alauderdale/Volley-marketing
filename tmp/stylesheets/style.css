@@ -5,7 +5,9 @@
   .text-left-sm {
     text-align: left !important; }
   .text-center-sm {
-    text-align: center !important; } }
+    text-align: center !important; }
+  .btn-block-sm {
+    width: 100%; } }
 
 section.inverse-section h1, section.inverse-section h2, section.inverse-section h3, section.inverse-section h4, section.inverse-section h5, section.inverse-section h6, section.inverse-section p, section.inverse-section small, section.inverse-section li {
   color: white !important; }
@@ -1028,6 +1030,9 @@ section {
     left: 50%;
     transform: translate(-50%, 0%);
     background: url("../images/check-ball.svg") no-repeat; }
+  .check-card.check-card-flat {
+    box-shadow: none;
+    background: #f5f7ff; }
 
 html.market-html {
   scroll-behavior: smooth; }
@@ -1044,6 +1049,9 @@ html.market-html {
   width: 100%; }
   .video-button-wrapper .btn {
     margin: 10px; }
+    @media (max-width: 768px) {
+      .video-button-wrapper .btn {
+        margin: 10px 0; } }
 
 .video-btn {
   position: relative;
@@ -2031,6 +2039,24 @@ ul.check-list {
   .invoice-list .row .unpaid i {
     color: #FF4E4A; }
 
+.border-text {
+  width: 100%;
+  display: block; }
+  .border-text:before {
+    display: block;
+    height: 1px;
+    background: #E6EAEE;
+    width: 100%;
+    position: relative;
+    top: 24px;
+    content: "";
+    z-index: -1; }
+  .border-text h1, .border-text h2, .border-text h3, .border-text h4, .border-text h5, .border-text h6, .border-text p {
+    background: white;
+    padding: 4px 20px;
+    display: inline-block;
+    z-index: 999; }
+
 .strikethrough {
   display: inline; }
   .strikethrough:before {
@@ -2044,26 +2070,41 @@ ul.check-list {
     z-index: 99; }
 
 .card.price-card {
-  min-height: 500px; }
+  min-height: 425px;
+  overflow: hidden;
+  position: relative; }
   @media (max-width: 768px) {
     .card.price-card {
       min-height: auto; } }
+  .card.price-card.popular {
+    border: 2px solid #0042FF; }
+    .card.price-card.popular:before {
+      content: "popular";
+      position: absolute;
+      top: 13px;
+      right: -123px;
+      width: 300px;
+      height: 27px;
+      transform: rotate(45deg);
+      font-size: 14px;
+      font-weight: 900;
+      color: white;
+      background: #0042FF;
+      text-align: center;
+      display: block;
+      z-index: 99; }
   .card.price-card .card-header {
     position: relative;
-    min-height: 170px; }
+    border-bottom: 1px solid #E6EAEE; }
     .card.price-card .card-header .card-promo {
       color: #002eb3; }
   .card.price-card h1 {
     position: relative; }
     .card.price-card h1 .price {
-      font-size: 20px;
-      position: absolute;
-      top: 15px; }
+      font-size: 20px; }
     .card.price-card h1 .dollar-ammount {
-      position: relative;
-      left: 15px; }
+      position: relative; }
     .card.price-card h1 .month {
-      font-size: 18px;
+      font-size: 16px;
       position: relative;
-      left: 8px;
       font-weight: 500; }

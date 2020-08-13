@@ -11,26 +11,33 @@
 		.row.justify-content-center
 			.col-lg-9
 				.double-margin-top
+					/ %h1.market.bold-font.double-margin-bottom.text-center
+					/ 	Review. Resolve. Repeat. 
+					/ %p.market.body-lg.double-margin-bottom.text-center
+					/ 	Capture feedback on any website to share with your team. 
+
 					%h1.market.bold-font.double-margin-bottom.text-center
 						Keep your Designs in Play
 					%p.market.body-lg.double-margin-bottom.text-center
 						%span.bold-font
-							Web and product designers, 
-						How often do you create a beautiful set of designs and hand them off to be developed, only for them to be built not quite right? 
+							Designers, 
+						how often do you create a set of pixel-perfect web designs only for them to need a few tweaks after being developed? 
 						%span.bold-font
 							Volley puts the ball back in your hands 
-						by allowing you to provide instant feedback to share with your developers. 
-			.row.justify-content-center
-				.col-12
-					.video-button-wrapper.text-center.double-margin-bottom
-						%a.btn.btn-primary.btn-lg{:href=>"https://app.meetvolley.com/sign-up"}
-							Try it - It’s free forever
-						%button.btn.btn-primary.video-btn.btn-lg{"data-src" => "https://www.youtube.com/embed/33AciLvQ9mo", "data-target" => "#myModal", "data-toggle" => "modal", :type => "button"}
-							%i.material-icons
-								play_circle_outline
-							See how it works
-					.padded
-						%img.max-width{:src=>"/images/home-hero.gif"}
+						by empowering you to provide lightning-fast feedback on ANY website to share with your developers. 
+		.row.justify-content-center
+			.col
+				.video-button-wrapper.text-center.double-margin-bottom
+					%a.btn.btn-primary.btn-lg.btn-block-sm{:href=>"https://app.meetvolley.com/sign-up"}
+						Try Volley for Free
+					%button.btn.btn-primary.video-btn.btn-lg.btn-block-sm{"data-src" => "https://www.youtube.com/embed/33AciLvQ9mo", "data-target" => "#myModal", "data-toggle" => "modal", :type => "button"}
+						%i.material-icons
+							play_circle_outline
+						See how it works
+					%h4.margin-top.text-center
+						Over 400 companies trust Volley for their website review workflow.
+				.padded
+					%img.max-width.full-width{:src=>"/images/home-hero.gif"}
 						
 
 #how-it-works.spacer
@@ -39,9 +46,9 @@
 		.row.align-items-center.justify-content-around
 			.col-lg-9.text-center	
 				%h2.market.bold-font.margin-bottom
-					Make your digital products shine
+					The most efficient way to review
 				%p.market.body-lg
-					Volley fills the gap between website design and development handoff. Here’s how Volley can help save you time and hassle.
+					Ditch the docs, emails and spreadsheets. Here's how you'll save oh, so much time with Volley:
 
 				
 %section
@@ -53,11 +60,31 @@
 				%h2.bold-font{:style=>"color:#F59328;"}
 					Review
 				%h3.bold-font.market
-					Use the browser extension to capture feedback on your website or digital product
-				%p.market
-					Instantly create notes and capture feedback. Upload screenshots to support your comments. Works on any website, even locally.
+					Use the browser extension to capture feedback
+				.margin-top
+					.media
+						%img.half-margin-right{:src=>"/images/check-ball.svg", :width=>"16px", :style=>"position:relative; top:7px;"}
+						.media-body
+							%p.market
+								Works on ANY website
+					.media
+						%img.half-margin-right{:src=>"/images/check-ball.svg", :width=>"16px", :style=>"position:relative; top:7px;"}
+						.media-body
+							%p.market
+								Works behind a login and on staging builds
+					.media
+						%img.half-margin-right{:src=>"/images/check-ball.svg", :width=>"16px", :style=>"position:relative; top:7px;"}
+						.media-body
+							%p.market
+								Attach mocks or files for additional context
+					.media
+						%img.half-margin-right{:src=>"/images/check-ball.svg", :width=>"16px", :style=>"position:relative; top:7px;"}
+						.media-body
+							%p.market
+								Similar tools iFrame your website, which feels clunky
+
 				%h4.market
-					Works on Chrome and FireFox — more coming soon
+					Available on Chrome and FireFox — more coming soon
 				%img{:src=>"/images/browsers.png", :width=>"99px"}
 
 
@@ -71,9 +98,24 @@
 				%h2.bold-font{:style=>"color:#33CE80;"}
 					Resolve
 				%h3.bold-font.market
-					All your feedback is centralized
-				%p.market
-					Your notes are saved to a collaborative workspace with detailed screenshots. 
+					Everything is centralized
+				.margin-top
+					.media
+						%img.half-margin-right{:src=>"/images/check-ball.svg", :width=>"16px", :style=>"position:relative; top:7px;"}
+						.media-body
+							%p.market
+								Notes saved to an easy-to-use workspace
+					.media
+						%img.half-margin-right{:src=>"/images/check-ball.svg", :width=>"16px", :style=>"position:relative; top:7px;"}
+						.media-body
+							%p.market
+								High-res screenshots for no loss of context
+					.media
+						%img.half-margin-right{:src=>"/images/check-ball.svg", :width=>"16px", :style=>"position:relative; top:7px;"}
+						.media-body
+							%p.market
+								View and resolve comments with ease
+
 
 
 %section.no-padding-top
@@ -83,11 +125,30 @@
 				%img.full-width.lr-img.right{:src=>"/images/gif-resolve.gif"}
 			.col-lg-4.order-lg-1
 				%h2.bold-font{:style=>"color:#37BCDA;"}
-					Share
+					Collaborate
 				%h3.bold-font.market
-					Invite your team
-				%p.market
-					Invite unlimited stakeholders to view your feedback and reply to conversations.
+					Share with your team
+				.margin-top
+					.media
+						%img.half-margin-right{:src=>"/images/check-ball.svg", :width=>"16px", :style=>"position:relative; top:7px;"}
+						.media-body
+							%p.market
+								Invite developers with a single click
+					.media
+						%img.half-margin-right{:src=>"/images/check-ball.svg", :width=>"16px", :style=>"position:relative; top:7px;"}
+						.media-body
+							%p.market
+								Share with unlimited stakeholders
+					.media
+						%img.half-margin-right{:src=>"/images/check-ball.svg", :width=>"16px", :style=>"position:relative; top:7px;"}
+						.media-body
+							%p.market
+								Reply to conversations and resolve items
+					.media
+						%img.half-margin-right{:src=>"/images/check-ball.svg", :width=>"16px", :style=>"position:relative; top:7px;"}
+						.media-body
+							%p.market
+								@mentions make communication effictive
 
 
 %section.no-padding-top
@@ -99,9 +160,23 @@
 				%h2.bold-font{:style=>"color:#D63230;"}
 					Export
 				%h3.bold-font.market
-					Export feedback to your favorite project management tools
-				%p.market
-					Export notes and screenshots directly to Trello and Jira. 
+					Export to your favorite project management tools
+				.margin-top
+					.media
+						%img.half-margin-right{:src=>"/images/check-ball.svg", :width=>"16px", :style=>"position:relative; top:7px;"}
+						.media-body
+							%p.market
+								Export notes directly to Trello and Jira
+					.media
+						%img.half-margin-right{:src=>"/images/check-ball.svg", :width=>"16px", :style=>"position:relative; top:7px;"}
+						.media-body
+							%p.market
+								Notes exported with detailed screenshots
+					.media
+						%img.half-margin-right{:src=>"/images/check-ball.svg", :width=>"16px", :style=>"position:relative; top:7px;"}
+						.media-body
+							%p.market
+								Perfect for developer workflows
 
 
 %section.off-white-bg
@@ -122,7 +197,7 @@
 								.padded
 									%img.max-width.margin-bottom{:src=>"../images/birdseed-logo.svg", :width=>"180px"}
 									%p
-										“as a non-technical founder of a company I constantly find myself working with our design team to bring our product to life, only to pass along to our development team and not able to fully “bring it to life” as intended.  What makes Volley so powerful for us is that it allows our designers to instantly provide feedback to our developers, ensuring we end up with exactly what we designed.”
+										“As a non-technical founder of a company I constantly find myself working with our design team to bring our product to life, only to pass along to our development team and not able to fully “bring it to life” as intended.  What makes Volley so powerful for us is that it allows our designers to instantly provide feedback to our developers, ensuring we end up with exactly what we designed.”
 									%h4.margin-bottom
 										%span.bold-font
 											—  Drew Sheahan, 

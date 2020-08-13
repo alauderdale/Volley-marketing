@@ -11,13 +11,85 @@
 			.col-lg-9
 				.double-margin-top
 					%h1.market.bold-font.double-margin-bottom.text-center
-						Simple Pricing
+						Pricing
 					%h2.double-margin-bottom.text-center
-						Get an ample free plan forever OR upgrade to unlimited everything for one unbelievably low price
-
-		.row
+						Get a free plan forever or upgrade for unlimited projects and team management.
+				.double-margin-top.text-center.double-marign-bottom
+					%a.btn.btn-primary.btn-lg.btn-block-sm{:href=>"https://app.meetvolley.com/sign-up"}
+						Sign up for Volley free
+					%h4.half-margin-top
+						No credit card required
+		/ .row.double-margin-top
+		/ 	.col-lg-4
+		/ 		.padded
+		/ 			.card.text-center.check-card.check-card-flat
+		/ 				.card-body
+		/ 					%p.quarter-margin-bottom.bold-font
+		/ 						Get started in seconds
+		/ 					%p.light-text-color.no-margin-bottom
+		/ 						Get started with 1 project to store all your notes
+		/ 	.col-lg-4
+		/ 		.padded
+		/ 			.card.text-center.check-card.check-card-flat
+		/ 				.card-body
+		/ 					%p.quarter-margin-bottom.bold-font
+		/ 						Effortless collaboration
+		/ 					%p.light-text-color.no-margin-bottom
+		/ 						Invite unlimited people to view and respond to your feedback
+		/ 	.col-lg-4
+		/ 		.padded
+		/ 			.card.text-center.check-card.check-card-flat
+		/ 				.card-body
+		/ 					%p.quarter-margin-bottom.bold-font
+		/ 						@mentions
+		/ 					%p.light-text-color.no-margin-bottom
+		/ 						Anyone you mention will be notified by email
+		.row.justify-content-center
+			.col-lg-6
+				%hr
+				%p
+					“Signing up for the service and getting started using it on my own site took minutes. There was no configuration required to use it and share my comments.”
+				.media
+					%img{:src=>"/images/marketing/extension/tyler-avatar.png", :width=>"47px"}
+					.media-body.half-margin-left
+						%h4.no-margin-bottom
+							%span.bold-font
+								Tyler Bindon 
+							%span.light-text-color
+								Web developer
+						%img{:src=>"/images/marketing/extension/5-star.svg"}
+		.row.double-margin-top
 			.col-lg-12
+				.border-text.text-center
+					%h2
+						All available plans
 				=partial('/shared/pricing-table')
+
+
+%section.off-white-bg
+	.container
+		.row.justify-content-center
+			.col-lg-11
+				.text-center
+					%h2.market.margin-bottom.bold-font
+						Dont take our word for it…
+					%img.max-width.double-margin-bottom{:src=>"../images/test-smile.svg", :width=>"77px"}
+				.card.testimonial-container.margin-top
+					.card-body
+						.row.align-items-center
+							.col-lg-4.order-lg-2.d-sm-none.d-none.d-lg-block
+								.padded
+									%img.max-width.profile-img{:src=>"../images/drew.png"}
+							.col-lg-8.order-lg-1
+								.padded
+									%img.max-width.margin-bottom{:src=>"../images/birdseed-logo.svg", :width=>"180px"}
+									%p
+										“As a non-technical founder of a company I constantly find myself working with our design team to bring our product to life, only to pass along to our development team and not able to fully “bring it to life” as intended.  What makes Volley so powerful for us is that it allows our designers to instantly provide feedback to our developers, ensuring we end up with exactly what we designed.”
+									%h4.margin-bottom
+										%span.bold-font
+											—  Drew Sheahan, 
+										Founder at BirdSeed
+									%img.max-width{:src=>"../images/stars.svg", :width=>"137px"}
 
 
 =partial('/shared/promo')
