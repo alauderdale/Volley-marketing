@@ -213,7 +213,7 @@ a {
 
 .btn {
   border-radius: 8px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 16px; }
   .btn.btn-lg {
     padding: .65rem 2rem; }
@@ -987,10 +987,38 @@ section {
   .badge.badge-danger {
     background-color: #FF4E4A; }
 
+.header-btns .btn {
+  padding: 12px 20px; }
+  @media (max-width: 1200px) {
+    .header-btns .btn {
+      padding: 10px 12px; } }
+
 .primary-footer section {
   background-color: #1d1e1f; }
   .primary-footer section ul li a {
     color: white; }
+
+.demo-video-wrapper {
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+  width: 960px;
+  position: relative;
+  border-radius: 14px;
+  margin-top: 32px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 14px 50px 0px;
+  background-color: #E6EAEE; }
+  @media (max-width: 992px) {
+    .demo-video-wrapper {
+      border-radius: 6px; } }
+
+.demo-video {
+  height: auto;
+  width: 100%;
+  margin-bottom: -10px;
+  margin-top: -1px;
+  margin-left: 1px; }
 
 .testimonial-container {
   background: #FFFFFF;
@@ -1010,8 +1038,7 @@ section {
           line-height: 1.8em; } }
 
 .check-card {
-  background: white;
-  box-shadow: 0 5px 18px 0 rgba(0, 0, 0, 0.08);
+  background: #f7f9ff;
   border: none;
   position: relative;
   min-height: 116px; }
@@ -1160,16 +1187,13 @@ p.market {
         line-height: 27px; } }
 
 h1.market {
-  font-size: 61px;
-  line-height: 59px; }
-  @media (max-width: 1200px) {
-    h1.market {
-      font-size: 52px;
-      line-height: 50px; } }
+  line-height: 1.1em;
+  font-size: 6vw;
+  font-size: 80px; }
   @media (max-width: 992px) {
     h1.market {
-      font-size: 40px;
-      line-height: 44px; } }
+      font-size: 44px;
+      line-height: 1.2em; } }
 
 h2.market {
   font-size: 41px;
@@ -2070,9 +2094,12 @@ ul.check-list {
     z-index: 99; }
 
 .card.price-card {
-  min-height: 425px;
+  min-height: 495px;
+  max-width: 350px;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(81, 107, 152, 0.24); }
   @media (max-width: 768px) {
     .card.price-card {
       min-height: auto; } }
@@ -2095,16 +2122,24 @@ ul.check-list {
       z-index: 99; }
   .card.price-card .card-header {
     position: relative;
-    border-bottom: 1px solid #E6EAEE; }
+    border-bottom: 1px solid #E6EAEE;
+    border-top: 10px solid #E6EAEE; }
     .card.price-card .card-header .card-promo {
       color: #002eb3; }
+  .card.price-card .card-body {
+    min-height: 240px; }
+  .card.price-card .card-header, .card.price-card .card-body, .card.price-card .card-footer {
+    padding: 30px; }
   .card.price-card h1 {
-    position: relative; }
+    position: relative;
+    font-weight: 700; }
     .card.price-card h1 .price {
-      font-size: 20px; }
+      font-size: 30px; }
     .card.price-card h1 .dollar-ammount {
-      position: relative; }
+      position: relative;
+      font-size: 55px; }
     .card.price-card h1 .month {
       font-size: 16px;
       position: relative;
+      right: 8px;
       font-weight: 500; }

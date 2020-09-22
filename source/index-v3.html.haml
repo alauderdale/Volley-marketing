@@ -9,31 +9,27 @@
 %section#main-hero
 	.container
 		.row.justify-content-center
-			.col-xl-12.col-lg-12
+			.col-lg-10
 				.double-margin-top
 					%h1.market.extra-bold-font.double-margin-bottom.text-center
-						%a.text-color{:href=>"https://chrome.google.com/webstore/detail/volley-extension/gipdjalmbiackhnmpjlpafmiaciejfdf?hl=en", :target=>"bblank"}
-							Keep Your Designs in Play
-		.row.justify-content-center
-			.col-lg-9
-				%p.market.body-lg.text-center
-					How often do you hand off a set of polished website designs to development, only for the result to come back still needing a few tweaks? 
-					%span.bold-font
-						Volley puts the ball back in your hands by allowing clear, visual feedback on ANY website.
+						The Visual Feedback Tool for Teams Making Websites
+					%p.market.body-lg.double-margin-bottom.text-center
+						Volley allows you to provide visual feedback and collaborate on ANY website.
 		.row.justify-content-center
 			.col
-				.padded.text-center
-					%img.max-width.full-width.d-none.d-sm-block{:src=>"/images/home-gif-2.gif"}
-					%img.max-width.max-width.d-block.d-sm-none.margin-auto{:src=>"/images/home-graphic-mobile.svg", :width=>"200px"}
-				.video-button-wrapper.text-center.margin-top
+				.video-button-wrapper.text-center.double-margin-bottom
 					%button.btn.btn-primary.video-btn.btn-lg.btn-block-sm{"data-src" => "https://www.youtube.com/embed/33AciLvQ9mo", "data-target" => "#myModal", "data-toggle" => "modal", :type => "button"}
 						%i.material-icons
 							play_circle_outline
 						See how it works
 					/ %h4.margin-top.text-center
 					/ 	Over 400 companies trust Volley for their website review workflow.
-					%a.btn.btn-primary.btn-lg.btn-block-sm{:href=>"https://app.meetvolley.com/sign-up", :style=>"min-width:220px;"}
-						Get started free
+					%a.btn.btn-primary.btn-lg.btn-block-sm{:href=>"https://app.meetvolley.com/sign-up"}
+						Get Volley Free
+				.padded.text-center
+					%img.max-width.full-width.d-none.d-sm-block{:src=>"/images/home-gif-2.gif"}
+					%img.max-width.max-width.d-block.d-sm-none.margin-auto{:src=>"/images/home-graphic-mobile.svg", :width=>"200px"}
+						
 
 #how-it-works.spacer
 %section.no-padding-bottom
@@ -41,9 +37,9 @@
 		.row.align-items-center.justify-content-around
 			.col-lg-9.text-center	
 				%h2.market.extra-bold-font.margin-bottom
-					Simplify your website review process
+					Stop wasting time with an inefficient website review process
 				%p.market.body-lg
-					With Volley, you can quickly and easily capture feedback on any website and share with your team.
+					Use the Volley extension on any website you want to review. Ensure every feature you deliver is flawless.
 
 
 				
@@ -53,27 +49,16 @@
 			.col-lg-6.order-lg-2
 				%img.full-width.lr-img.right{:src=>"/images/gif-extension.gif"}
 			.col-lg-5.order-lg-1
-				%h3.bold-font{:style=>"color:#F59328;"}
+				%h2.bold-font{:style=>"color:#F59328;"}
 					Review
 				%h3.bold-font.market
 					Capture feedback in seconds
 				%p.market
-					Use the Volley extension to review ANY website instantly. Attach files to support your comments. Even works locally or behind a login!
+					Instantly make notes and capture feedback. Attach files to support your comments. Works on any website, even locally!
+
 				%h4.market
 					Available on Chrome and FireFox — more coming soon
 				%img{:src=>"/images/browsers.png", :width=>"99px"}
-				%hr
-				%p
-					"Volley is without doubt the biggest timesaver I have come across in a very long time. It literally takes seconds to create a note that includes both a screenshot of the problem and a written description."
-				.media
-					%img{:src=>"/images/avatar-mathias.png", :width=>"47px"}
-					.media-body.half-margin-left
-						%h4.no-margin-bottom
-							%span.bold-font
-								Mathias Hoffmann
-							%span.light-text-color
-								CTO
-						%img{:src=>"/images/denti-logo.png", :width=>"70px"}
 				%p.bold-font.market.margin-top
 					%a.link-underline{:href=>"https://app.meetvolley.com/sign-up"}
 						Start capturing feedback
@@ -86,12 +71,12 @@
 			.col-lg-6
 				%img.full-width.lr-img.left{:src=>"/images/gif-resolve.gif"}
 			.col-lg-4
-				%h3.bold-font{:style=>"color:#37BCDA;"}
+				%h2.bold-font{:style=>"color:#37BCDA;"}
 					Share
 				%h3.bold-font.market
 					Keep your team aligned
 				%p.market
-					Invite people to view and respond to your feedback. Feedback is task based and complete with browser and OS data.
+					Invite unlimited stakeholders to view your feedback and reply to conversations. Feedback is complete with browser and OS data.
 				%hr
 				%p
 					“Volley streamlines our client feedback loop, saves countless back and forth emails, and lets us know precisely what changes we need to do.”
@@ -116,12 +101,12 @@
 			.col-lg-6.order-lg-2
 				%img.full-width.lr-img.right{:src=>"/images/colloborate-gif.gif"}
 			.col-lg-4.order-lg-1
-				%h3.bold-font{:style=>"color:#33CE80;"}
+				%h2.bold-font{:style=>"color:#33CE80;"}
 					Resolve
 				%h3.bold-font.market
-					View and resolve feedback fast
+					Resolve your issues fast
 				%p.market
-					Feedback is saved to a collaborative workspace with detailed screenshots. Similar tools iFrame your website which feels clunky. Screenshots allow for now loss of context and 10x faster review. 
+					Your notes are saved to a collaborative workspace with detailed screenshots.
 				%hr
 				%p
 					“Signing up for Volley and using it on my own site took minutes. There was no configuration required to use it and share my comments.”
@@ -146,15 +131,15 @@
 			.col-lg-6
 				%img.full-width.lr-img.left{:src=>"/images/home-step-export.png"}
 			.col-lg-4
-				%h3.bold-font{:style=>"color:#D63230;"}
+				%h2.bold-font{:style=>"color:#D63230;"}
 					Export
 				%h3.bold-font.market
 					Send feedback to your favorite tools
 				%p.market
-					Integrate seamlessly into your existing workflow and export feedback directly to Trello and Jira.
+					Integrate seamlessly into your existing workflow and export notes and screenshots directly to Trello and Jira.
 				%p.bold-font.market.margin-top
 					%a.link-underline{:href=>"https://app.meetvolley.com/sign-up"}
-						Sign up for free
+						Start capturing feedback
 
 
 %section
@@ -196,9 +181,7 @@
 		.row.double-margin-bottom
 			.col-lg-12.text-center
 				%h2.market.double-margin-bottom
-					%span.bold-font
-						Made 
-					(by designers)
+					Made by designers
 					%span.bold-font
 						for designers 
 				%p.bold-font.market

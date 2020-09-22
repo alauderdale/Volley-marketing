@@ -1,0 +1,8 @@
+.header-btns{
+	.btn{
+		padding:12px 20px;
+		@include breakpoint(lg) {
+			padding:10px 12px;
+		}
+	}
+}

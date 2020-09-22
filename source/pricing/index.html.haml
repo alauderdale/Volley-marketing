@@ -5,91 +5,139 @@
 ;;;
 
 
-%section#main-hero.no-padding-bottom
+%section#main-hero.double-padding-bottom
 	.container
 		.row.justify-content-center
-			.col-lg-9
+			.col-lg-12
 				.double-margin-top
-					%h1.market.bold-font.double-margin-bottom.text-center
-						Pricing
-					%h2.double-margin-bottom.text-center
-						Get a free plan forever or upgrade for unlimited projects and team management.
-				.double-margin-top.text-center.double-marign-bottom
-					%a.btn.btn-primary.btn-lg.btn-block-sm{:href=>"https://app.meetvolley.com/sign-up"}
-						Sign up for Volley free
-					%h4.half-margin-top
-						No credit card required
-		/ .row.double-margin-top
-		/ 	.col-lg-4
-		/ 		.padded
-		/ 			.card.text-center.check-card.check-card-flat
-		/ 				.card-body
-		/ 					%p.quarter-margin-bottom.bold-font
-		/ 						Get started in seconds
-		/ 					%p.light-text-color.no-margin-bottom
-		/ 						Get started with 1 project to store all your notes
-		/ 	.col-lg-4
-		/ 		.padded
-		/ 			.card.text-center.check-card.check-card-flat
-		/ 				.card-body
-		/ 					%p.quarter-margin-bottom.bold-font
-		/ 						Effortless collaboration
-		/ 					%p.light-text-color.no-margin-bottom
-		/ 						Invite unlimited people to view and respond to your feedback
-		/ 	.col-lg-4
-		/ 		.padded
-		/ 			.card.text-center.check-card.check-card-flat
-		/ 				.card-body
-		/ 					%p.quarter-margin-bottom.bold-font
-		/ 						@mentions
-		/ 					%p.light-text-color.no-margin-bottom
-		/ 						Anyone you mention will be notified by email
+					%h1.market.extra-bold-font.double-margin-bottom.text-center
+						Simple pricing
 		.row.justify-content-center
-			.col-lg-6
-				%hr
-				%p
-					“Signing up for the service and getting started using it on my own site took minutes. There was no configuration required to use it and share my comments.”
+			.col-lg-10
+				%h2.double-margin-bottom.text-center
+					Choose the plan that’s right for you or your team.
+
+		.row
+			.col-lg-12
+				.double-padding-top
+					=partial('/shared/pricing-table')
+		.row.justify-content-center.margin-top
+			.col-lg-5
+				.padded
+					%p.market
+						“Volley streamlines our client feedback loop, saves countless back and forth emails, and lets us know precisely what changes we need to do.”
+					.media
+						%img{:src=>"/images/aidain.png", :width=>"47px"}
+						.media-body.half-margin-left
+							%h4.quarter-margin-bottom
+								%span.bold-font
+									Aidan Scott 
+								%span.light-text-color
+									Technical Director
+							%img{:src=>"/images/logo-resync.svg", :width=>"57px"}
+			.col-lg-5
+				.padded
+					%p.market
+						"Volley is without doubt the biggest timesaver I have come across in a very long time. It literally takes seconds to create a note that includes both a screenshot of the problem and a written description."
 				.media
-					%img{:src=>"/images/marketing/extension/tyler-avatar.png", :width=>"47px"}
+					%img{:src=>"/images/avatar-mathias.png", :width=>"47px"}
 					.media-body.half-margin-left
 						%h4.no-margin-bottom
 							%span.bold-font
-								Tyler Bindon 
+								Mathias Hoffmann
 							%span.light-text-color
-								Web developer
-						%img{:src=>"/images/marketing/extension/5-star.svg"}
-		.row.double-margin-top
-			.col-lg-12
-				.border-text.text-center
-					%h2
-						All available plans
-				=partial('/shared/pricing-table')
+								CTO
+						%img{:src=>"/images/denti-logo.png", :width=>"70px"}
 
 
-%section.off-white-bg
+
+%section.padding-bottom
 	.container
 		.row.justify-content-center
-			.col-lg-11
-				.text-center
-					%h2.market.margin-bottom.bold-font
-						Dont take our word for it…
-					%img.max-width.double-margin-bottom{:src=>"../images/test-smile.svg", :width=>"77px"}
-				.card.testimonial-container.margin-top
-					.card-body
-						.row.align-items-center
-							.col-lg-4.order-lg-2.d-sm-none.d-none.d-lg-block
-								.padded
-									%img.max-width.profile-img{:src=>"../images/drew.png"}
-							.col-lg-8.order-lg-1
-								.padded
-									%img.max-width.margin-bottom{:src=>"../images/birdseed-logo.svg", :width=>"180px"}
-									%p
-										“As a non-technical founder of a company I constantly find myself working with our design team to bring our product to life, only to pass along to our development team and not able to fully “bring it to life” as intended.  What makes Volley so powerful for us is that it allows our designers to instantly provide feedback to our developers, ensuring we end up with exactly what we designed.”
-									%h4.margin-bottom
-										%span.bold-font
-											—  Drew Sheahan, 
-										Founder at BirdSeed
-									%img.max-width{:src=>"../images/stars.svg", :width=>"137px"}
+			.col-lg-12
+				%h2.market.extra-bold-font.double-margin-bottom.text-center
+					Frequently asked questions
+		.row.justify-content-center
+			.col-lg-6
+				.padded
+					%p.bold-font.market.body-lg
+						Does Volley work on Wordpress, Shopify and Squarespace sites? What about React, Angular and other we app frameworks?
+					%p.market
+						Yes and yes! Volley works on literally any website with no code to install. Because it’s a lightweight browser extension that sits on top of your website, it even works behind logins and on staging sites. You can use Volley on literally any page you can view in your browser. We designed it to be the most versitile tool out there. 
+			.col-lg-6
+				.padded
+					%p.bold-font.market.body-lg
+						What makes Volley different from other visual feedback tools I’ve seen?
+					%p.market
+						Other tools put your website in an iFrame using complex code. This means that some pages and sites won’t work well and often take a long time to load. Because Volley works with screenshots of your actual website, you can ensure it will work everywhere. Also, Volley’s collaboration mode is optimized to be much faster to use than other tools that must load each page ON TOP of their own, often slow, code before showing your comments. We designed Volley for speedy review and it shows!
+
+		.row.justify-content-center
+			.col-lg-6
+				.padded
+					%p.bold-font.market.body-lg
+						Do I need a different project for every website?
+					%p.market
+						Nope. You can provide feedback on unlimited websites/pages within a single project. Simply visit any website, launch the extension, and send all the feedback you like to that project.
+			.col-lg-6
+				.padded
+					%p.bold-font.market.body-lg
+						What’s the difference between a user and a collaborator?
+					%p.market
+						Users are members of your team and share all projects in your team workspace. Users can also create unlimited projects within your team workspace. As a plan owner, you can create unlimited team workspaces and distribute users in them however you like. Collaborators are people you invite into individual projects and have access to view and create feedback for that specific project. 
+		.row.justify-content-center
+			.col-lg-6
+				.padded
+					%p.bold-font.market.body-lg
+						Are my projects, comments, and screenshots secure?
+					%p.market
+						You bet! We’re up to date with the latest in security standards. You can rest assured that all your projects are secure and safe. Learn more about our 
+						%a{:href=>"/security"}
+							commitment to world-class security
+						\.
+			.col-lg-6
+				.padded
+					%p.bold-font.market.body-lg
+						Can I cancel a paid plan anytime?
+					%p.market
+						Yep! We even refund a prorated portion of your last payment so you won’t pay a penny more than you use. If you cancel right after making a full monthly payment, you shouldn’t have to pay for the time you don’t use. 
+			.row.justify-content-center
+				.col-lg-6
+					.padded
+						%p.bold-font.market.body-lg
+							Does Volley work with responsive websites?
+						%p.market
+							Yes, it does! Simply shrink your browser and Volley will capture feedback on the mobile version of your site. 
+				.col-lg-6
+					.padded
+						%p.bold-font.market.body-lg
+							Do I need a credit card to start?
+						%p.market
+							Nope. You can use your free Basic plan without a credit card forever.
+
+/ %section.off-white-bg
+/ 	.container
+/ 		.row.justify-content-center
+/ 			.col-lg-11
+/ 				.text-center
+/ 					%h2.market.margin-bottom.bold-font
+/ 						Dont take our word for it…
+/ 					%img.max-width.double-margin-bottom{:src=>"../images/test-smile.svg", :width=>"77px"}
+/ 				.card.testimonial-container.margin-top
+/ 					.card-body
+/ 						.row.align-items-center
+/ 							.col-lg-4.order-lg-2.d-sm-none.d-none.d-lg-block
+/ 								.padded
+/ 									%img.max-width.profile-img{:src=>"../images/drew.png"}
+/ 							.col-lg-8.order-lg-1
+/ 								.padded
+/ 									%img.max-width.margin-bottom{:src=>"../images/birdseed-logo.svg", :width=>"180px"}
+/ 									%p
+/ 										“As a non-technical founder of a company I constantly find myself working with our design team to bring our product to life, only to pass along to our development team and not able to fully “bring it to life” as intended.  What makes Volley so powerful for us is that it allows our designers to instantly provide feedback to our developers, ensuring we end up with exactly what we designed.”
+/ 									%h4.margin-bottom
+/ 										%span.bold-font
+/ 											—  Drew Sheahan, 
+/ 										Founder at BirdSeed
+/ 									%img.max-width{:src=>"../images/stars.svg", :width=>"137px"}
 
 
 =partial('/shared/promo')
